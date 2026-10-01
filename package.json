@@ -1,0 +1,31 @@
+{
+	"name": "@humanlayer/opencode",
+	"version": "0.1.0",
+	"description": "Mirror opencode sessions to HumanLayer, and answer them from the web app",
+	"type": "module",
+	"exports": {
+		".": "./index.js",
+		"./tui": "./tui.tsx"
+	},
+	"bin": {
+		"humanlayer-opencode": "./cli.js"
+	},
+	"files": [
+		"*.js",
+		"*.ts",
+		"*.tsx",
+		"skills",
+		"README.md"
+	],
+	"engines": {
+		"opencode": ">=2.0.0"
+	},
+	"dependencies": {
+		"@opencode/plugin": "2.0.20"
+	},
+	"peerDependencies": {
+		"@opentui/core": ">=0.5.0",
+		"@opentui/solid": ">=0.5.0",
+		"solid-js": "^1.9.0"
+	}
+}
