@@ -19,7 +19,9 @@ OpenCode 2 runs a shared background server by default, and the plugin's server h
 
 Headless, sign in with `humanlayer-opencode login [channel]` (also `status` and `logout`), or set `HUMANLAYER_PAT`.
 
-To update, run the `opencode plugin add` line again. To remove, delete the plugin's line from `"plugins"` in `~/.config/opencode/opencode.json`.
+To update, run `opencode plugin update`, then restart opencode (`opencode service restart` restarts the background server). To remove, run `opencode plugin remove git+https://github.com/humanlayer/humanlayer-opencode.git`.
+
+If `opencode` stops at "Starting background server...", another process holds the server's port. Pick another with `opencode service set port <port>`, or run `opencode --standalone`.
 
 ### Build and publish
 
