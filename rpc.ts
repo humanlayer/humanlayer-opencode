@@ -3,7 +3,8 @@
 // follows the events for its footer, notices and the login's code and org picker. Both import this
 // file, so they agree on the names; the shapes below are what the methods and events carry.
 
-import type { Channel } from '@humanlayer/session-sdk-base'
+/** A HumanLayer channel, as @humanlayer/session-sdk-base names them. The TUI half imports nothing from the workspace. */
+export type Channel = 'prod' | 'beta' | 'dev' | 'local'
 
 const object = { type: 'object' } as const
 
