@@ -1,5 +1,7 @@
 # opencode-humanlayer
 
+:warning: NOTE - this plugin is in alpha - thanks for checking it out. If you have feedback or find issues, you can file them here or start a thread at https://hlyr.dev/discord
+
 An OpenCode v2 plugin that mirrors your opencode sessions to HumanLayer, so they show in the web app beside your other sessions, and lets you reply to them and stop them from there. It needs OpenCode 2 (`@opencode/cli`); it does not load in OpenCode 1. It does what the pi extension does, from the same shared packages.
 
 ## Install
